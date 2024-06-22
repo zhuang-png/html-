@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>12_伪类选择器_否定伪类_</title>
+    <style>
+        /* 排除满足括号条件的元素 */
+        /* 排除类名 */
+        /* div>p:not(.fail){
+            color: red;
+        } */
+        /* 排除title */
+        /* div>p:not([title^=你要加油啊]){
+            color: red;
+        } */
+        /* 排除第一个 */
+        div>p:not(:first-child){
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>张三：98</p>
+        <p>李四：88</p>
+        <p>李五：78</p>
+        <p>赵六：68</p>
+        <p class="fail" title="你要加油啊！孙七">孙七：58</p>
+        <p class="fail" title="你要加油啊！老八">老八：48</p>
+    </div>
+</body>
+</html>

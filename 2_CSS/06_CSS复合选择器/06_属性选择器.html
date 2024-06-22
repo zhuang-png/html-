@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <!-- 第一种写法：具有title属性 -->
+    <style>
+        /* [title]{
+            color:red;
+        } */
+    /* 第二种写法：具有title属性并指定值 */
+        /* [title="atguigu1"]{
+            color:blue;
+        } */
+    /* 第三种写法：具有title属性并指定值开头字母*/
+        /* [title^="a"]{
+            color:red;
+        } */
+    /* 第四种写法：具有title属性并指定值结尾字母 */
+        /* [title$="3"]{
+            color:aquamarine;
+        } */
+    /* 第五种写法：具有title属性且属性值包含  */
+        [title*="t"]{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div title="atguigu1">尚硅谷1</div>
+    <div title="atguigu2">尚硅谷2</div>
+    <div title="guigu3">尚硅谷3</div>
+    <div title="guigu4">尚硅谷4</div>
+</body>
+</html>

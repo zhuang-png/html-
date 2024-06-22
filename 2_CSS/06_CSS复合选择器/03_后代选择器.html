@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>03_后代选择器</title>
+    <style>
+        ul li{
+            color:red;
+        }
+        ol li{
+            color:green;
+        }
+        ul li a{
+            color:orange;
+        }
+        ol li a{
+            color:violet;
+        }
+        .language li{
+            color:black;
+        }
+        .language #Java{
+            color:blueviolet;
+        }
+    </style>
+    
+</head>
+<body>
+    <ul>
+        <li>抽烟</li>
+        <li>喝酒</li>
+        <li>烫头</li>
+        <li>
+            <a href="#">烫头</a>
+        </li>
+    </ul>
+    <hr>
+    <ol>
+        <li>张三</li>
+        <li>李四</li>
+        <li>王五</li>
+        <li>
+            <a href="#">标签</a>
+        </li>
+    </ol>
+    <hr>
+    <ol class="language">
+        <li id="Java">Java</li>
+        <li>Python</li>
+        <li>C++</li>
+    </ol>
+</body>
+</html>
