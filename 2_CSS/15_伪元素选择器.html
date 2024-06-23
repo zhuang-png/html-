@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素选择器</title>
+    <style>
+        /* 第一个字母 */
+        div::first-letter{
+            color: red;
+            font-size: 30px;
+        }
+        /* 第一行 */
+        div::first-line{
+            background-color: green;
+        }
+        /* 被鼠标选中的 */
+        div::selection{
+            color: blue;
+        }
+        /* input里的提示文字 */
+        input::placeholder{
+            color: red;
+        }
+        /* 给p元素前面创建一个子元素 */
+        p::before{
+            content: "￥";
+            color: gold;
+        }
+        /* 给p元素前面创建一个子元素 */
+        p::after{
+            content: ".00";
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non ipsam accusantium officia impedit eaque eius a id facilis consectetur consequatur aliquam incidunt ex nostrum neque culpa quam placeat mollitia, quaerat harum quas est amet doloremque inventore atque! Porro ipsam ea quasi maxime illum aspernatur repellat sequi provident earum error sit labore odio harum minus est, itaque ratione esse voluptatibus explicabo.</div>
+    <br>
+    <input type="text" placeholder="输入用户名">
+    <p>199</p>
+</body>
+</html>
