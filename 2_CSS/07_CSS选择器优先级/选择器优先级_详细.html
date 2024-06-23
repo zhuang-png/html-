@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器优先级_详细</title>
+    <style>
+        /* (a,b,c) 
+            a = id
+            b = 类 伪类
+            c = 元素 伪元素*/
+        .container span.slogan{
+            color: red;
+        }
+        div>p>span:nth-child(1){
+            color: blue;
+        }
+        /* !important > 所有 */
+        .slogan{
+            color: chartreuse !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>
+            <span class="slogan">尚硅谷，让天下没有难学的技术</span><br>
+            <span>欢迎来到尚硅谷</span>
+        </p>
+    </div>
+</body>
+</html>

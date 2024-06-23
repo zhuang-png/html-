@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS三大特性</title>
+    <style>
+        /* 层叠性 */
+        /* 继承性 
+            元素会拥有父元素或祖上元素的特性，
+            优先继承离得近的
+            有些特性没法继承*/
+        /* 优先级
+        !important > 行内样式 > ID选择器 > 类选择器 > * > 继承的样式
+        */
+        h2{
+            color: red;
+        }
+        h2{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>尚硅谷</h2>
+</body>
+</html>
