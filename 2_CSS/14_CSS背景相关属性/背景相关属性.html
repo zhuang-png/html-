@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>背景相关属性</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        div{
+            width: 400px;
+            height: 400px;
+            font-size: 40px;
+            border: 5px black solid;
+            /* 设置背景颜色 默认值是transparent（透明）*/
+            background-color: skyblue;
+            /* 设置背景图片 */
+            background-image: url(../imgs/奥特曼.jpg);
+            /* 设置背景图片的重复方式 */
+            background-repeat: no-repeat;
+            /* 控制背景图片的位置 用关键词 */
+            background-position: right top;
+            /* 控制背景图片的位置 用具体的像素值 */
+            background-position: 100px 20px;
+            /* 复合属性 */
+            background: skyblue url(../imgs/奥特曼.jpg) no-repeat 100px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>你好啊！</div>
+</body>
+</html>
