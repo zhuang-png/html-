@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>13_margin的注意事项3</title>
+    <style>
+        #d1{
+            width: 400px;
+            height: 400px;
+            background-color: deepskyblue;
+            margin: 50px;
+        }
+        img{
+            margin: 50px;
+        }
+
+        #one{
+            background-color: aqua;
+        }
+        #two{
+            background-color: blueviolet;
+            margin-left: 50px;
+            margin-right: 50px;
+            /* 对于行内元素设置margin的上下是没有效果的 */
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        #three{
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">我是一个块级元素</div>
+    <div>我是一段文字</div>
+    <img src="../imgs/奥特曼.jpg" alt="">
+    <div>我是一段文字</div>
+    <hr>
+    <span id="one">人之初</span><span id="two">性本善</span><span id="three">性相近</span>
+</body>
+</html>
