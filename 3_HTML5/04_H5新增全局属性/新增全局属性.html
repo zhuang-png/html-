@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>新增全局属性</title>
+    <style>
+        div{
+            width: 600px;
+            height: 200px;
+            border: 1px solid black;
+            font-size: 20px;
+            margin: 10px;
+        }
+        .box1{
+            background-color: skyblue;
+        }
+        .box2{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 编辑 
+        spellcheck：拼写检查-->
+    <div class="box1" contenteditable="true" spellcheck="true">Lorem ipsum dolor sit amet.</div>
+    <!-- 拖动
+        hidden:隐藏元素 -->
+    <div class="box2" draggable="true" hidden>Lorem ipsum dolor sit amet.</div>
+</body>
+</html>
